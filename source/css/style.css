@@ -1054,7 +1054,7 @@ template {
   position: absolute;
   width: 59px;
   height: 40px;
-  background-image: url("../img/weather-cloudly.svg.svg");
+  background-image: url("../img/weather-cloudly.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
