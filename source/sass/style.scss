@@ -1,0 +1,24 @@
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/normalize";
+
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/menu-section.scss";
+@import "blocks/nav.scss";
+@import "blocks/language-list.scss";
+@import "blocks/main.scss";
+@import "blocks/promo.scss";
+@import "blocks/weather.scss";
+@import "blocks/social-list.scss";
+@import "blocks/resort-service.scss";
+@import "blocks/search.scss";
+@import "blocks/services.scss";
+@import "blocks/services-headers.scss";
+@import "blocks/services-content.scss";
+@import "blocks/about.scss";
+@import "blocks/blog.scss";
+@import "blocks/blog-controls.scss";
+@import "blocks/blog-list.scss";
+@import "blocks/footer.scss";

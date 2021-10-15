@@ -1,0 +1,148 @@
+.search__form {
+  width: 328px;
+  margin: 0 auto;
+  margin-top: 11px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  background-color: $special_grey;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+}
+
+.search__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.search__input {
+  width: 312px;
+  border: 1px solid $special_white;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $special_dark;
+  margin: 8px;
+  padding: 19px 15px;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.search__input-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 62px;
+    height: 60px;
+    top: 2px;
+    right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 8px;
+  }
+}
+
+.search__input-wrapper_type {
+  @media (min-width: $desktop-width) {
+    width: 328px;
+  }
+
+  &::after {
+      background: $basic_white url("../img/search-arrow.svg") no-repeat center;
+
+    @media (min-width: $desktop-width) {
+      width: 22px;
+      height: 40px;
+      top: 12px;
+      right: 8px;
+    }
+  }
+}
+
+.search__input-wrapper_date {
+  @media (min-width: $desktop-width) {
+    width: 264px;
+    margin-left: 0;
+  }
+
+  &::after {
+    background: $basic_white url("../img/search-calendar.svg") no-repeat center;
+
+    @media (min-width: $desktop-width) {
+      width: 45px;
+      top: 2px;
+      right: 2px;
+    }
+  }
+}
+
+.search__input-wrapper_properties {
+  @media (min-width: $desktop-width) {
+    width: 392px;
+    margin-left: 0;
+  }
+
+  &::after {
+    background: $basic_white url("../img/search-person.svg") no-repeat center;
+
+    @media (min-width: $desktop-width) {
+      width: 42px;
+      right: 2px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 60px;
+    background: linear-gradient(270deg, $basic_white 0%, rgba(255, 255, 255, 0) 100%);
+    top: 2px;
+    right: 72px;
+
+    @media (min-width: $desktop-width) {
+      right: 44px;
+    }
+  }
+}
+
+.search__button {
+  display: block;
+  border: none;
+  border-radius: 8px;
+  background-color: $basic_dark;
+  min-height: 64px;
+  width: 312px;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 0;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: $basic_white;
+
+  @media (min-width: $desktop-width) {
+    width: 144px;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}

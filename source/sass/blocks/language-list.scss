@@ -1,0 +1,19 @@
+.language-list__item {
+  margin-right: 24px;
+}
+
+.language-list__button {
+  background: none;
+  border: none;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: transparentize($basic_black, 0.76);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  &_active {
+    color: $special_dark;
+  }
+}

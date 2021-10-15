@@ -1,0 +1,153 @@
+.about {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 213px;
+    height: 345px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../img/about-background-mobile.png');
+    background-size: cover;
+    bottom: -244px;
+    right: 0;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/about-background-mobile@2x.png');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 95px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 524px;
+      height: 848px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url('../img/about-background-right.png');
+      background-size: cover;
+      bottom: -448px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/about-background-right@2x.png');
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 365px;
+      height: 880px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url('../img/about-background-left.png');
+      background-size: cover;
+      bottom: -120px;
+      left: 0;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/about-background-left@2x.png');
+      }
+    }
+  }
+}
+
+.about__lead {
+  font-family: "SangBleuKingdom", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: $basic_dark;
+  margin: 0;
+  padding: 0;
+  padding-top: 73px;
+  position: relative;
+
+  &_bold {
+    font-weight: 700;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 146px;
+    height: 8px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/wave.svg");
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/logo-decor-mobile.svg");
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $desktop-width) {
+      width: 62px;
+      height: 40px;
+      background-size: cover;
+      bottom: -82px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 56px;
+    padding-top: 87px;
+  }
+}
+
+.about__desc {
+  font-family: "SangBleuKingdom", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: $special_dark;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 75px;
+  width: 328px;
+
+  @media (min-width: $desktop-width) {
+    width: 640px;
+    margin-top: 124px;
+  }
+}
+
+.about__button {
+  margin: 0 auto;
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 200px;
+  min-height: 64px;
+  border-radius: 8px;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $basic_dark;
+  border: 1px solid #D9C287;
+}

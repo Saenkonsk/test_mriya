@@ -1,0 +1,35 @@
+.blog-controls__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: $basic_gold;
+  position: relative;
+
+  &_prev::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/arrow-left.svg");
+    background-size: cover;
+    top: 14px;
+    left: 16px;
+  }
+
+  &_next::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/arrow-left.svg");
+    background-size: cover;
+    transform: rotate(180deg);
+    top: 14px;
+    left: 16px;
+  }
+}

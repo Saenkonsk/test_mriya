@@ -1,0 +1,227 @@
+.promo {
+  color: $basic_dark;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 182px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/waves.svg");
+    top: -55px;
+    left: -75px;
+
+    @media (min-width: $desktop-width) {
+      left: 49px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 159px;
+    height: 325px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../img/promo-background-mobile.png');
+    background-size: cover;
+    top: -79px;
+    right: 0;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-background-mobile@2x.png');
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1420px;
+      height: 936px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url('../img/promo-background-desktop.png');
+      background-size: cover;
+      top: -159px;
+      right: -465px;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/promo-background-desktop@2x.png');
+      }
+    }
+  }
+}
+
+.promo__lead {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 79px;
+  margin-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 139px;
+  }
+}
+
+.promo__title {
+  font-family: "SangBleuKingdom", "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+
+  width: 210px;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+    margin-left: 135px;
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+
+.promo__desc {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  width: 330px;
+  margin: 0;
+  margin-top: 28px;
+  margin-left: 16px;
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin-top: 41px;
+    margin-left: 140px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.promo__links {
+  display: grid;
+  grid-template-columns: repeat(2, 156px);
+  grid-column-gap: 16px;
+  grid-row-gap: 48px;
+  justify-content: center;
+  margin-top: 39px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    margin-left: 140px;
+    justify-content: start;
+    grid-template-columns: repeat(2, 200px);
+    grid-column-gap: 40px;
+    grid-row-gap: 96px;
+  }
+}
+
+.promo__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 156px;
+  min-height: 64px;
+  border-radius: 8px;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+
+  &_find-room {
+    color: $basic_white;
+    background: linear-gradient(0deg, #BCA56A, #BCA56A), #86C1DB;
+  }
+
+  &_3d {
+    color: $basic_dark;
+    border: 1px solid $basic_gold;
+  }
+}
+
+.promo__weird-link {
+  position: relative;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid $basic_gold;
+  grid-column: 1 / -1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../img/arrow-down.svg");
+    background-size: cover;
+    top: 28px;
+    left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.promo__social-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    width: 64px;
+    position: absolute;
+    right: 76px;
+    top: 113px;
+  }
+}
+
+.promo__weather {
+  display: none;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  position: absolute;
+  bottom: -14px;
+  right: 201px;
+  color: $basic_white;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 721px;
+      height: 319px;
+      background-image: url('../img/weather_background.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: -94px;
+      right: -201px;
+      z-index: 0;
+    }
+  }
+}

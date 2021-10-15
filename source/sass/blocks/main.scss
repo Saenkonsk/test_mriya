@@ -1,0 +1,55 @@
+.main__resort-service {
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    margin: 0 auto;
+  }
+}
+
+.main__about {
+  margin-top: 72px;
+}
+
+.main__blog {
+  margin-top: 120px;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 24px;
+    margin-top: 96px;
+    padding: 61px 100px;
+    padding-bottom: 17px;
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content);
+    grid-column-gap: 6px;
+    grid-row-gap: 48px;
+
+    &::before {
+      width: 453px;
+      height: 856px;
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url('../img/curves-left.svg');
+      background-size: cover;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      width: 313px;
+      height: 856px;
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url('../img/curves-right.svg');
+      background-size: cover;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+}

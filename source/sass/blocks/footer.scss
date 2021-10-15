@@ -1,0 +1,62 @@
+.footer {
+  min-height: 416px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    min-height: 813px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 557px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url('../img/footer-background-mobile.png');
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/footer-background-mobile@2x.png');
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      height: 253px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url('../img/Mriya-Resort.svg');
+      background-size: cover;
+      top: 150px;
+      left: 0;
+    }
+  }
+}
+
+.footer__img {
+  position: absolute;
+  top: -134px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo {
+  margin-top: 144px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 104px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+}
