@@ -41,7 +41,7 @@ let menuSlider = new Swiper('.menu-slider', {
   loop: true,
   autoplay: {
     delay: 3000,
-    waitForTransition: true,
+    waitForTransition: false,
     disableOnInteraction: false,
   },
   flipEffect: {
@@ -52,10 +52,10 @@ let menuSlider = new Swiper('.menu-slider', {
     el: '.menu-slider__pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<li class="' + className + '">' + '<svg class="fp-arc-loader" width="16" height="16" viewBox="0 0 16 16">' +
-        '<circle class="path" cx="8" cy="8" r="5.5" fill="none" transform="rotate(-90 8 8)" stroke="#FFF"' +
+      return '<li class="' + className + '">' + '<svg class="fp-arc-loader" width="24" height="24" viewBox="0 0 24 24">' +
+        '<circle class="path" cx="12" cy="12" r="11.5" fill="none" transform="rotate(-90 12 12)" stroke="#D9C287"' +
         'stroke-opacity="1" stroke-width="1.5px"></circle>' +
-        '<circle cx="8" cy="8" r="3" fill="#FFF"></circle>' +
+        '<circle class="path_center" cx="12" cy="12" r="8" fill="#FFF"></circle>' +
         '</svg></li>';
     }
   }

@@ -13,10 +13,18 @@
   margin: 0;
   margin-top: 31px;
   margin-left: 60px;
+
+  &_menu {
+    margin-left: 48px;
+  }
 }
 
 .nav__item {
   margin-right: 65px;
+
+  &_menu {
+    margin-right: 64px;
+  }
 }
 
 .nav__link {

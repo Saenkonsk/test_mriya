@@ -11,6 +11,7 @@
     background-color: $basic_brown;
     opacity: 98%;
     width: 1440px;
+    justify-content: start;
   }
 }
 
@@ -47,22 +48,55 @@
     background-color: $basic_brown;
     width: 1360px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 940px 420px;
 
     &::before {
       content: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1220px;
+      height: 1px;
+      background-color: $basic_gold;
+      opacity: 24%;
+      bottom: 71px;
+      left: 140px;
     }
   }
 }
 
 .menu-section__list {
-  // width: 328px;
-  // margin: 0 auto;
   list-style: none;
 
   &_desktop {
+    margin-top: 24px;
     margin-left: 140px;
     width: 761px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 369px;
+      background-color: $basic_gold;
+      opacity: 24%;
+      top: 8px;
+      left: -57px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 552px;
+      background-color: $basic_gold;
+      opacity: 24%;
+      top: 8px;
+      left: 400px;
+    }
   }
 }
 
@@ -88,6 +122,10 @@
   opacity: 24%;
   bottom: -1px;
   left: 16px;
+}
+
+.menu-section__item_desktop:last-child::after {
+  content: none;
 }
 
 .menu-section__link {
@@ -120,7 +158,6 @@
   }
 
   &:hover::before {
-    // background-color: transparent;
     content: none;
   }
 
@@ -133,6 +170,16 @@
     background-color: transparentize($basic_gold, 0.84);
     top: 0;
     left: 0;
+  }
+
+  &_desktop {
+    width: 360px;
+    padding: 15px 15px 17px 24px;
+    font-size: 24px;
+
+    &:hover + .submenu__wrapper_desktop {
+      display: flex;
+    }
   }
 
   &_desktop::before {
@@ -159,6 +206,14 @@
   &_mail {
     margin-top: 16px;
     margin-bottom: 38px;
+
+    &_desktop {
+      grid-column: -2/-1;
+      margin-top: 24px;
+      margin-bottom: 24px;
+      margin-right: 60px;
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -173,6 +228,15 @@
 
   path {
     fill: $basic_gold;
+  }
+
+  &_desktop {
+    position: absolute;
+    flex-direction: column;
+    left: 59px;
+    bottom: 48px;
+    gap: 32px;
+    width: auto;
   }
 }
 

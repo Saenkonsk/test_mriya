@@ -93,7 +93,10 @@
   @media (min-width: $desktop-width) {
     margin-left: 76px;
   }
+}
 
+.header__logo_menu_desktop {
+  margin-left: 50px;
 }
 
 .header__language-list {
@@ -144,7 +147,7 @@
       border-bottom: 1px dashed $basic_white;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $desktop-width - 1) {
     width: 80px;
     height: 80px;
     padding: 0;
@@ -173,6 +176,11 @@
       display: none;
     }
   }
+
+  &_menu {
+    margin-left: auto;
+    margin-right: 217px;
+  }
 }
 
 .header__phone {
@@ -188,7 +196,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $desktop-width - 1) {
     display: none;
   }
 }
