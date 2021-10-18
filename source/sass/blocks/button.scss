@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 156px;
+  min-height: 64px;
+  border-radius: 8px;
+  font-family: "EuclidCircularB", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.button_menu {
+  background-color: $special_gold_light;
+  color: $basic_white;
+  width: 328px;
+  margin: 0 auto;
+  margin-top: 40px;
+}

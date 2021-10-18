@@ -22,5 +22,9 @@
   &_mobile {
     width: 48px;
     height: 48px;
+
+    &::before {
+      content: none;
+    }
   }
 }

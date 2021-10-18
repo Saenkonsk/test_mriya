@@ -1,0 +1,53 @@
+.swiper-pagination-bullet {
+	background: #fff;
+}
+.swiper-pagination-bullet-active .path{
+	display: inline-block !important;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash linear 120s;
+  animation-iteration-count: unset;
+}
+.path {
+	display: none;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.menu-slider {
+  grid-column: 2/-1;
+  width: 420px;
+  height: 616px;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-slider__list {
+  list-style: none;
+}
+
+.menu-slider__item {
+  position: relative;
+}
+
+.menu-slider__desc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.swiper-horizontal  ul.menu-slider__pagination {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 3;
+}

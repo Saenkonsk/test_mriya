@@ -16,7 +16,7 @@
   }
 }
 
-.services-headers__btn {
+ul .swiper-pagination-bullet {
   background: none;
   border: none;
   font-family: "EuclidCircularB", "Arial", sans-serif;
@@ -30,10 +30,14 @@
   padding: 0;
   padding-top: 10px;
   padding-bottom: 6px;
+  opacity: 1;
+  width: auto;
+  height: auto;
 
-  &_active {
+  &-active {
     color: #BCA56A;
     position: relative;
+    border-radius: 0;
 
     // &::after {
     //   content: "";

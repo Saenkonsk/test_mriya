@@ -1,0 +1,39 @@
+.submenu-list {
+  list-style: none;
+  width: 296px;
+  margin: 0 auto;
+  padding: 0;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu-list__item {
+  margin-top: 16px;
+
+  &:first-child {
+    padding-top: 7px;
+  }
+
+  &:last-child {
+    padding-bottom: 26px;
+  }
+}
+
+.submenu-list__link {
+  text-decoration: none;
+  font-family: Euclid Circular B;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic_white;
+  display: flex;
+  // padding-top: 50px;
+
+  &:hover {
+    color: $basic_gold;
+  }
+}

@@ -28,4 +28,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-decoration: none;
+
+  &_menu {
+    color: $basic_white;
+  }
 }

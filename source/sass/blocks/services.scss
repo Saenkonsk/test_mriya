@@ -1,3 +1,11 @@
+.services .swiper .swiper-slide {
+  height: 0;
+}
+
+.services .swiper .swiper-slide-active {
+  height: auto;
+}
+
 .services__header-wrapper {
   display: flex;
   position: relative;
@@ -72,6 +80,7 @@
   margin: 0;
   padding: 0;
   margin-left: 16px;
+  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
